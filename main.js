@@ -10,11 +10,9 @@
     yDifference = (centerY - e.clientY) / 5;
     xDifference = (centerX - e.clientX) / 4.5;
 
-    target.style.transform = `rotateX(${yDifference}deg) rotateY(${xDifference}deg) rotateZ(0deg)`;
+    target.style.transform = `rotateX(${yDifference}deg) rotateY(${xDifference}deg) rotateZ(0deg) scale(1.1,1.1)`;
   });
-  target.addEventListener("mouseover", e => {
-    target.style.transform = ` scale(1.1,1.1)`;
-  });
+ 
   target.addEventListener("mouseout", e => {
     target.style.transform = ` scale(1,1)`;
   });
